@@ -23,7 +23,7 @@ HOSTNAME: str = ''
 # A short name for the record that will show in urls
 # Lowercase with no spaces.
 # Ex: whats-hot
-RECORD_NAME: str = ''
+RECORD_NAME: str = 'vrchat-skeets'
 
 # A display name for your feed
 # Ex: What's Hot
