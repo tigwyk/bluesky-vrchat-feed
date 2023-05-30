@@ -6,13 +6,13 @@ def operations_callback(ops: dict) -> None:
     # After our feed alg we can save posts into our DB
     # Also, we should process deleted posts to remove them from our DB and keep it in sync
 
-    # for example, let's create our custom feed that will contain all posts that contains alf related text
+    # for example, let's create our custom feed that will contain all posts that contains vrchat related text
 
     posts_to_create = []
     for created_post in ops['posts']['created']:
         record = created_post['record']
-        # only alf-related posts
-        if 'alf' in record.text.lower():
+        # only vrchat-related posts
+        if 'vrchat' in record.text.lower():
             reply_parent = None
             if record.reply and record.reply.parent.uri:
                 reply_parent = record.reply.parent.uri
